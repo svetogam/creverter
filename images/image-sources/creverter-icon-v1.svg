@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="creverter-icon-v1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="2.0888418"
+     inkscape:cx="33.272027"
+     inkscape:cy="145.29583"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14"
+     showguides="true"
+     showgrid="true">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="8"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true"
+       enabled="true" />
+    <sodipodi:guide
+       position="16.933332,33.866666"
+       orientation="1,0"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,16.933334"
+       orientation="0,-1"
+       id="guide7"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="27.516665,33.866666"
+       orientation="1,0"
+       id="guide8"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="6.3499997,33.866666"
+       orientation="1,0"
+       id="guide9"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,25.4"
+       orientation="0,-1"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,8.4666673"
+       orientation="0,-1"
+       id="guide11"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="8.4666662,33.866666"
+       orientation="1,0"
+       id="guide12"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="25.399999,33.866666"
+       orientation="1,0"
+       id="guide13"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g14"
+       inkscape:label="Bottom">
+      <path
+         style="fill:none;stroke:#478dbf;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 6.3499997,25.399999 H 27.516665"
+         id="path5"
+         sodipodi:nodetypes="cc"
+         inkscape:label="Line" />
+      <circle
+         style="fill:#468dbf;fill-opacity:1;stroke:none;stroke-width:0.793999;stroke-linecap:round"
+         id="path1"
+         cx="27.516665"
+         cy="25.4"
+         r="3.534735"
+         inkscape:label="Node1" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#path1"
+         id="use4"
+         transform="translate(-10.583333)"
+         inkscape:label="Node2" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#use4"
+         id="use5"
+         transform="translate(-10.583333)"
+         inkscape:label="Node3" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#478dbf;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="10.386419"
+         height="10.271611"
+         x="22.323456"
+         y="20.264194"
+         ry="0.92077088"
+         inkscape:label="Rect" />
+    </g>
+    <g
+       id="g13"
+       inkscape:label="Top">
+      <path
+         id="path2466"
+         sodipodi:nodetypes="cccccccc"
+         style="fill:#478dbf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.120648;stroke-linejoin:round"
+         d="m 11.948605,12.379478 h 2.986029 C 14.9648,8.3981064 10.862777,3.0896109 4.7097458,6.5883924 L 3.2619747,4.7485163 1.1204786,11.957211 7.7862605,10.630088 6.4892982,9.0013444 c 3.1368397,-1.658904 5.5196318,0.844533 5.4593068,3.3781336 z"
+         inkscape:label="Undo" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#path2466"
+         id="use13"
+         transform="matrix(-0.99999999,0,0,0.99999999,32.988612,0)"
+         inkscape:label="Redo" />
+    </g>
+  </g>
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
