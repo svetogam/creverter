@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CReverter"
-run/main_scene="res://examples/example.tscn"
+run/main_scene="res://examples/creverter/basic_example/example.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.png"
 

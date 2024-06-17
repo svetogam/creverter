@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://btml0og1jpu1e"]
 
-[ext_resource type="Script" path="res://examples/example.gd" id="1_rhywv"]
-[ext_resource type="Script" path="res://examples/field.gd" id="1_yfit2"]
-[ext_resource type="PackedScene" uid="uid://4rgmcqkp1cx6" path="res://examples/ball.tscn" id="2_2j10n"]
-[ext_resource type="Script" path="res://examples/control_board.gd" id="3_gkcen"]
-[ext_resource type="Script" path="res://examples/diagram.gd" id="5_7isyh"]
+[ext_resource type="Script" path="res://examples/creverter/basic_example/example.gd" id="1_rhywv"]
+[ext_resource type="Script" path="res://examples/creverter/basic_example/field.gd" id="1_yfit2"]
+[ext_resource type="PackedScene" uid="uid://4rgmcqkp1cx6" path="res://examples/creverter/basic_example/ball.tscn" id="2_2j10n"]
+[ext_resource type="Script" path="res://examples/creverter/basic_example/control_board.gd" id="3_gkcen"]
+[ext_resource type="Script" path="res://examples/creverter/basic_example/diagram.gd" id="5_7isyh"]
 
 [node name="Top" type="Node"]
 script = ExtResource("1_rhywv")
