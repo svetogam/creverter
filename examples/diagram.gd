@@ -58,7 +58,7 @@ func _draw_commit_rect(item_number: int) -> void:
 
 
 func _draw_tags(item_number: int, tags: Array) -> void:
-	tags.erase(reverter.CURSOR_TAG)
+	tags.erase(str(reverter.CURSOR_TAG))
 	if tags.size() >= 4:
 		tags[3] = "..."
 		tags.resize(4)
