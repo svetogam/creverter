@@ -58,15 +58,17 @@ func _draw_commit_rect(item_number: int) -> void:
 
 
 func _draw_tags(item_number: int, tags: Array) -> void:
-	tags.erase(str(reverter.CURSOR_TAG))
+	# Dictionary.erase() doesn't work with StringName apparently,
+	# so you have to manually convert CReverter.CURSOR_TAG to a String
+	# to remove it from arrays returned by CRHistory.get_tags_at().
+	tags.erase(str(CReverter.CURSOR_TAG))
+
 	if tags.size() >= 4:
 		tags[3] = "..."
 		tags.resize(4)
 
 	var tag_position := _get_item_rect(item_number).position + FIRST_TAG_OFFSET
 	for tag in tags:
-		if tag == CReverter.CURSOR_TAG:
-			continue
 		draw_string(font, tag_position, tag, HORIZONTAL_ALIGNMENT_CENTER,
 				ITEM_SIZE.x, TAG_FONT_SIZE, FORE_COLOR)
 		tag_position += ITER_TAG_OFFSET

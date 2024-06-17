@@ -9,10 +9,11 @@ func _ready() -> void:
 		ball.input_event.connect(_on_ball_input_event.bind(ball))
 
 
+# Keep passing the reverter down to objects that won't be deleted
+# while the reverter is running.
 func setup(reverter: CReverter) -> void:
 	for ball in balls:
-		reverter.connect_save_load(
-				ball.get_instance_id(), ball.save_state, ball.load_state)
+		ball.setup(reverter)
 
 
 func _on_ball_input_event(

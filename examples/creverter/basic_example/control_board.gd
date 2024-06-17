@@ -28,6 +28,7 @@ func setup(p_reverter: CReverter) -> void:
 	reverter = p_reverter
 	%Diagram.setup(reverter)
 
+	# Give the reverter an interface by connecting its methods to signals.
 	%CommitButton.pressed.connect(reverter.commit)
 	%RevertButton.pressed.connect(reverter.revert)
 	%UndoButton.pressed.connect(reverter.undo)
@@ -49,6 +50,8 @@ func setup(p_reverter: CReverter) -> void:
 	_update_board()
 
 
+# For more complicated interfaces, connect your own methods and call
+# the reverter's methods from there.
 func _on_ball_changed() -> void:
 	%CommitButton.disabled = false
 	%RevertButton.disabled = reverter.history.is_empty()
@@ -58,6 +61,7 @@ func _on_save_or_load() -> void:
 	_update_board()
 
 
+# Access the history to clear things while the reverter is running.
 func _on_clear_pressed() -> void:
 	reverter.history.clear()
 	_update_board()
