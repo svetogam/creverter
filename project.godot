@@ -11,6 +11,8 @@ config_version=5
 [application]
 
 config/name="CReverter"
+config/description="The Composite Reverter is a memento-based undo/redo utility that supports composition."
+config/version="1.0.0"
 run/main_scene="res://examples/creverter/basic_example/example.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.png"
