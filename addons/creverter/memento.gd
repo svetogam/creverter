@@ -24,8 +24,8 @@ func _init(p_data := {}) -> void:
 	data = p_data
 
 
-## Takes another [CRMemento]-derived resource and returns true if
-## they are equal, false otherwise.
+## Takes another [CRMemento]-derived resource and returns [code]true[/code] if
+## they are equal, [code]false[/code] otherwise.
 ## [br][br]
 ## This is called by the
 ## [CReverter] to determine if it should ignore a new commit due to

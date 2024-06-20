@@ -125,6 +125,10 @@ func connect_save_load(id: Variant, save_func: Callable, load_func: Callable) ->
 ## than the one pointed to by the [member cursor] before pushing
 ## the new memento.
 ## [br][br]
+## If the [member cursor] is on the newest memento and the number of
+## mementos in [member history] is equal to [member CRHistory.max_size],
+## then the memento at the oldest position will be forgotten.
+## [br][br]
 ## Pass an optional [param tag] to tag the new memento.
 ## This enables loading it later with [method load_tag].
 ## Commiting with the same tag as an already exsting
@@ -166,7 +170,7 @@ func commit(tag: StringName = "") -> void:
 
 
 ## Moves the [member cursor] to the next older memento and loads it.
-## Does nothing if [method is_undo_possible] returns false.
+## Does nothing if [method is_undo_possible] returns [code]false[/code].
 ## [br][br]
 ## Emits [signal loaded] after loading.
 func undo() -> void:
@@ -184,7 +188,7 @@ func undo() -> void:
 
 
 ## Moves the [member cursor] to the next newer memento and loads it.
-## Does nothing if [method is_redo_possible] returns false.
+## Does nothing if [method is_redo_possible] returns [code]false[/code].
 ## [br][br]
 ## Emits [signal loaded] after loading.
 func redo() -> void:
@@ -217,16 +221,16 @@ func revert() -> void:
 	loaded.emit()
 
 
-## Returns true if undo is possible, which is when the [member cursor] is
+## Returns [code]true[/code] if undo is possible, which is when the [member cursor] is
 ## on a memento that is newer than the oldest one.
-## Returns false otherwise, including when the [member history] is empty.
+## Returns [code]false[/code] otherwise, including when the [member history] is empty.
 func is_undo_possible() -> bool:
 	return not history.is_empty() and cursor != history.oldest_position
 
 
-## Returns true if redo is possible, which is when the [member cursor] is
+## Returns [code]true[/code] if redo is possible, which is when the [member cursor] is
 ## on a memento that is older than the newest one.
-## Returns false otherwise, including when the [member history] is empty.
+## Returns [code]false[/code] otherwise, including when the [member history] is empty.
 func is_redo_possible() -> bool:
 	return not history.is_empty() and cursor != history.newest_position
 

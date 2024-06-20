@@ -9,7 +9,7 @@ extends Resource
 ## Good reasons to access this class are to
 ## set the [member max_size],
 ## [method clear] the history,
-## or draw the history.
+## and draw the history.
 
 ## Constant signifying an invalid position in the history.
 const NULL_POSITION: int = -1
@@ -65,7 +65,7 @@ func clear() -> void:
 
 
 ## Returns the [CRMemento] at the given position if the position is valid.
-## Returns null if the history is empty or if the position is
+## Returns [code]null[/code] if the history is empty or if the position is
 ## out of bounds.
 ## [br][br]
 ## The first position in the history is equal to [constant FIRST_POSITION].
@@ -98,12 +98,13 @@ func size() -> int:
 	return _stack.size()
 
 
-## Returns true if the history is empty, false otherwise.
+## Returns [code]true[/code] if the history is empty, [code]false[/code] otherwise.
 func is_empty() -> bool:
 	return _stack.is_empty()
 
 
-## Returns true if the history has the given tag, false otherwise.
+## Returns [code]true[/code] if the history has the given tag,
+## [code]false[/code] otherwise.
 func has_tag(tag: StringName) -> bool:
 	return _tags.has(tag)
 
